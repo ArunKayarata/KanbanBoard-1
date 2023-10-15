@@ -1,0 +1,87 @@
+*{
+    box-sizing: border-box;
+    padding: 0px;
+    margin: 0px;
+    font-family: 'Montserrat', sans-serif;
+    /* color: white; */
+}
+body{
+    min-height: 100dvh;
+    padding: 3rem;
+    background-image: url("./bg.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+}
+.form-wrapper{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 4rem;
+    gap: 1rem;
+}
+.task-input{
+    height: 2rem;
+    width: 25%;
+    border-radius: .5rem;
+    font-size: 1rem;
+   
+    border: none;
+    color: black;
+    outline: none;
+    padding: 1rem;
+ 
+
+
+}
+.submit{
+    height: 2rem;
+    width: 8%;
+    font-weight: bolder;
+    font-size: large;
+    border-radius: .5rem;
+    border: none;
+    cursor: pointer;
+    color: black;
+    
+}
+.task-wrapper{
+    margin-block: 5rem;
+    /* margin-left: 4rem; */
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+    gap: 2rem;
+}
+.box h3{
+    font-size: 2rem;
+    margin-left: 5rem;
+    color: black;
+    /* padding: 0.7rem; */
+}
+.box{
+    background-color: white;
+    min-height: 60dvh;
+    padding: .8rem;
+    border-radius: 2rem;
+}
+.task{
+    height: 10%;
+    background-color: black;
+    width: 80%;
+    border-radius: 1rem;  
+    margin-top: 1.5rem; 
+    margin-left: 1.5rem; 
+    cursor: move;
+    transition: transform 0.2s ease-in;
+   
+}
+.task p{
+    font: 1rem;
+    /* margin-top: 5rem; */
+    padding: .8rem;
+    font-weight: bold;
+    color: white;
+}
+.task:hover{
+transform: scale(1.1);
+}
