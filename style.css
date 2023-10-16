@@ -8,10 +8,11 @@
 body{
     min-height: 100dvh;
     padding: 3rem;
-    background-image: url("./bg.jpg");
-    background-repeat: no-repeat;
+    /* background-image: url("./bg.jpg"); */
+    /* background-repeat: no-repeat;
     background-size: cover;
-    background-position: center;
+    background-position: center; */
+    background-color: #ff63477a;
 }
 .form-wrapper{
     display: flex;
@@ -19,6 +20,16 @@ body{
     align-items: center;
     height: 4rem;
     gap: 1rem;
+    position: relative;
+}
+.save{
+    position: absolute;
+    right: 3rem;
+    
+}
+.save button{
+    border-radius: .4rem;
+    padding: .3rem;
 }
 .task-input{
     height: 2rem;
@@ -59,14 +70,14 @@ body{
     /* padding: 0.7rem; */
 }
 .box{
-    background-color: white;
+    background-color: #ff7fa7bf;
     min-height: 60dvh;
     padding: .8rem;
     border-radius: 2rem;
 }
 .task{
     height: 10%;
-    background-color: black;
+    background-color: white;
     width: 80%;
     border-radius: 1rem;  
     margin-top: 1.5rem; 
@@ -80,8 +91,15 @@ body{
     /* margin-top: 5rem; */
     padding: .8rem;
     font-weight: bold;
-    color: white;
+    color: black;
 }
 .task:hover{
 transform: scale(1.1);
+background-color: blueviolet;
+}
+.is-dragging{
+    transform: rotate(5deg);
+    background-color: blueviolet;
+    /* transition: none; */
+    z-index: 2228;
 }
