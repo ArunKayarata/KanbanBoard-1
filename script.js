@@ -54,16 +54,15 @@ saveBtn.addEventListener("click",function(){
 
 syncBtn.addEventListener("click",()=>{
     const savedItems=JSON.parse(localStorage.getItem('tasks'));
-    console.log(savedItems)
+    // console.log(savedItems)
     const newtodo=savedItems.todo;
-    console.log(savedItems.todo)
+    // console.log(savedItems.todo)
     recreate(newtodo,todo);
     const newdoing=savedItems.doing;
     recreate(newdoing,doing);
-    console.log(savedItems.doing)
+    // console.log(savedItems.doing)
     const newdone=savedItems.done;
     recreate(newdone,done);
-    console.log(savedItems.done)
   
 })
 
