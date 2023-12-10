@@ -72,8 +72,19 @@ function recreate(p,pa){
         const para=document.createElement('p');
         para.innerText=p[i];
         div.classList.add('task'); 
+        div.setAttribute('draggable','true');
         div.appendChild(para);
         pa.appendChild(div);
+        
+        div.addEventListener('dragstart', (e) =>  {
+            div.classList.add('is-dragging')
+            source = e.target.parentNode.id;
+        });
+        div.addEventListener('dragend', (e) => {
+            div.classList.remove('is-dragging');
+            target = e.target.parentNode.id;
+            recalculateTasksArr(p[i]);
+        });
     }
 }
 function recalculateTasksArr(task){

@@ -18,7 +18,7 @@ body{
     display: flex;
     justify-content: center;
     align-items: center;
-    height: 4rem;
+    height: 7rem;
     gap: 1rem;
     position: relative;
 }
@@ -33,7 +33,7 @@ body{
 }
 .task-input{
     height: 2rem;
-    width: 25%;
+   
     border-radius: .5rem;
     font-size: 1rem;
    
@@ -46,8 +46,7 @@ body{
 
 }
 .submit{
-    height: 2rem;
-    width: 8%;
+  padding: .7rem;
     font-weight: bolder;
     font-size: large;
     border-radius: .5rem;
@@ -71,12 +70,12 @@ body{
 }
 .box{
     background-color: #9b9fe8ed;
-    min-height: 60dvh;
+    /* min-height: 60dvh; */
     padding: .8rem;
     border-radius: 2rem;
 }
 .task{
-    height: 10%;
+    /* height: 10%; */
     background-color: white;
     width: 80%;
     border-radius: 1rem;  
@@ -88,18 +87,39 @@ body{
 }
 .task p{
     font: 1rem;
-    /* margin-top: 5rem; */
-    padding: .8rem;
+    /* padding-left: .8rem;
+    padding-bottom: 2rem;
+    padding-top: .3rem; */
+    padding: 1rem;
     font-weight: bold;
     color: black;
 }
 .task:hover{
 transform: scale(1.1);
-background-color: blueviolet;
+background-color: rgb(241, 241, 104);
 }
 .is-dragging{
     transform: rotate(5deg);
-    background-color: blueviolet;
+    background-color: rgb(128, 211, 231);
     /* transition: none; */
     z-index: 2228;
+}
+@media  (max-width: 768px){
+    .task-wrapper{
+        display: flex;
+        flex-direction: column;
+        width: 60%;
+        margin: 0 auto;
+    }
+    .form-wrapper{
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+    }
+    .save{
+        position: fixed;
+        right: 1rem;
+        top: 1rem;
+    }
+    
 }
